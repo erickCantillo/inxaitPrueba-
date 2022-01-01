@@ -77,6 +77,22 @@
                                 </select>
                             </div>
                         </div>
+                        <div class="md:flex block my-4">
+                            <div class="col-span-12 sm:col-span-6 w-full mr-4 mt-2 sm:mt-0">
+                                <label for="" class="block font-bold text-sm text-gray-700">Departamento</label>
+                                <select v-model="departamento_id" name="" id="" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" wire:model="movimiento.producto_id">
+                                    <option value="">Slecciona una opcion</option>
+                                    <option v-for="d in departamentos" :value="d.id">@{{d.nombre}}<option>
+                                </select>
+                            </div>
+                            <div class="col-span-12 sm:col-span-6 w-full mr-4 mt-2 sm:mt-0">
+                                <label for="" class="block font-bold text-sm text-gray-700">Ciudad</label>
+                                <select name="" id="" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" wire:model="movimiento.producto_id">
+                                    <option value="">Slecciona una opcion</option>
+                                    
+                                </select>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
